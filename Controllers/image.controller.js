@@ -20,7 +20,7 @@ class ImageController {
     limit = parseInt(limit) || 1000
 
     // Eksekverer sequelize metode med management values
-    const result = await Images.findAll({
+    const result = await Image.findAll({
       attributes: ['id', 'title', 
         [
           sequelize.fn(
